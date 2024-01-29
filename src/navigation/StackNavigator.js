@@ -7,6 +7,7 @@ import LoginScreen from "../screens/LoginScreen";
 import RegisterScreen from "../screens/RegisterScreen";
 import Course from "../components/Course";
 import Details from "../screens/Details";
+import Enrol from "../screens/Enrol";
 
 const StackNavigator = () => {
   const Stack = createNativeStackNavigator();
@@ -36,6 +37,11 @@ const StackNavigator = () => {
         <Stack.Screen
           name="Course"
           component={Course}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Enrol"
+          component={Enrol}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

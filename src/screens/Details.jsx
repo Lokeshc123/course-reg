@@ -44,7 +44,7 @@ const Details = ({ item }) => {
             <ScrollView >
                 <Text style={styles.description}>{details.description}</Text>
             </ScrollView>
-            <TouchableOpacity style={styles.btn}>
+            <TouchableOpacity style={styles.btn} onPress={() => navigation.navigate("Enrol")}>
                 <Text style={{ fontSize: 20, fontWeight: "bold", color: "white", alignSelf: "center" }}>Enroll Now</Text>
             </TouchableOpacity>
         </SafeAreaView>
